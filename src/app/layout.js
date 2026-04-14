@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         
         
         
-       <div className="flex items-center justify-between p-4 border-b border-gray-700">
+       {/* <div className="flex items-center justify-between p-4 border-b border-gray-700">
 
 
       <div>
@@ -67,8 +67,56 @@ export default function RootLayout({ children }) {
     
 
 
-        </div> 
+        </div>  */}
         
+
+
+
+        <div className="flex items-center justify-between px-4 md:px-8 py-4 border-b border-gray-200">
+  
+  {/* Name */}
+  <div>
+    <h1 className="text-2xl md:text-4xl font-bold text-blue-600">
+      Rezae Rabby
+    </h1>
+  </div>
+
+  {/* Nav */}
+  <div>
+    <nav className="flex flex-wrap justify-end gap-2 md:gap-4">
+      
+      <Link
+        href="/"
+        className="text-sm md:text-base px-3 py-2 md:px-4 md:py-2 bg-blue-100 rounded-lg hover:bg-blue-200 transition"
+      >
+        Home
+      </Link>
+
+      <Link
+        href="/about"
+        className="text-sm md:text-base px-3 py-2 md:px-4 md:py-2 bg-blue-100 rounded-lg hover:bg-blue-200 transition"
+      >
+        About
+      </Link>
+
+      <Link
+        href="/skills"
+        className="text-sm md:text-base px-3 py-2 md:px-4 md:py-2 bg-blue-100 rounded-lg hover:bg-blue-200 transition"
+      >
+        Skills
+      </Link>
+
+      <Link
+        href="/contact"
+        className="text-sm md:text-base px-3 py-2 md:px-4 md:py-2 bg-blue-100 rounded-lg hover:bg-blue-200 transition"
+      >
+        Contact
+      </Link>
+
+    </nav>
+  </div>
+
+</div>
         
         
         
@@ -77,3 +125,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
